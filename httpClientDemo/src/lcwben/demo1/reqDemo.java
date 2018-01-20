@@ -1,13 +1,6 @@
 package lcwben.demo1;
 
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.security.KeyStore;
-import java.security.cert.CertificateException;
-import java.util.ArrayList;
-
-import javax.net.ssl.SSLContext;
-import javax.xml.ws.Response;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.StatusLine;
@@ -35,8 +28,8 @@ public class reqDemo {
        
             // 创建httpGet对象
         	
-//            HttpGet httpGet = new HttpGet("http://www.baidu.com/");
-        	HttpGet httpGet = new HttpGet("http://mirrors.hust.edu.cn/apache//httpcomponents/httpcore/binary/httpcomponents-core-4.4.8-osgi-bin.zip");
+            HttpGet httpGet = new HttpGet("http://www.baidu.com/");
+//        	HttpGet httpGet = new HttpGet("http://mirrors.hust.edu.cn/apache//httpcomponents/httpcore/binary/httpcomponents-core-4.4.8-osgi-bin.zip");
             System.out.println("executing request " + httpGet.getURI());  
             
             CloseableHttpResponse response = null; 
